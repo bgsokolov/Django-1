@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+  </head>
+  <title>LBA Config Generator</title>
+
+  <style>
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         }
+  </style>
+
+  <body>
+    <h1>
+        <span style="font-family: Arial; ">
+          LBA Config Generator
+        </span>
+    </h1>
+       <img src="/media/Alteon5224_lg.jpg" width="20%" height="20%">
+       <br>
+
+    <form action="/" method="post">
+        <h2>
+            <span style="font-family: Arial; ">Chose Launch Mode</span>
+        </h2>
+
+          <span style="font-family: Arial; ">{{ lba_modes|safe }}</span>
+        <br>
+        <input type="submit" value="Submit" onClick='location.href="https://ya.ru/"'>
+    </form>
+  </body>
+</html>
